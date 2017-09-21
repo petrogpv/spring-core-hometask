@@ -1,8 +1,5 @@
 package ua.epam.spring.hometask.service;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import ua.epam.spring.hometask.domain.Event;
 
 /**
@@ -17,7 +14,7 @@ public interface EventService extends AbstractDomainObjectService<Event> {
      *            Name of the event
      * @return found event or <code>null</code>
      */
-    public @Nullable Event getByName(@Nonnull String name);
+    public Event getByName(String name);
 
     /*
      * Finding all events that air on specified date range
